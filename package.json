@@ -1,0 +1,41 @@
+{
+  "name": "@stringke/prisma-generator-stringke",
+  "version": "1.0.0",
+  "description": "String Java Project Generator",
+  "bin": "./dist/generator.js",
+  "scripts": {
+    "build": "tsc -p .",
+    "dev:watch": "tsc -p . --watch",
+    "dev": "tsc -p . && npm run prisma:generate",
+    "format": "prettier --write \"src/**/*.ts\" \"__tests__/**/*.ts\"",
+    "prisma:generate": "npx prisma generate",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
+    "rocket": "npm run build && npm publish --access public"
+  },
+  "keywords": [
+    "prisma",
+    "dbml",
+    "generator"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/StringKe/prisma-generator-stringke.git"
+  },
+  "bugs": {
+    "url": "https://github.com/StringKe/prisma-generator-stringke/issues"
+  },
+  "dependencies": {
+    "@prisma/generator-helper": "^4.13.0",
+    "@prisma/internals": "^4.13.0"
+  },
+  "devDependencies": {
+    "@prisma/client": "^4.13.0",
+    "@types/node": "^18.16.5",
+    "prettier": "^2.8.8",
+    "prisma": "^4.13.0",
+    "ts-jest": "^29.1.0",
+    "ts-toolbelt": "^9.6.0",
+    "typescript": "^5.0.4"
+  }
+}

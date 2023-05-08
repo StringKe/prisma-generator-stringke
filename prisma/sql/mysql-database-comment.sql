@@ -1,0 +1,3 @@
+ALTER TABLE name MODIFY name TYPE COMMENT 'user name';
+ALTER TABLE id MODIFY id TYPE COMMENT 'ID';
+ALTER TABLE Profile COMMENT 'User profile';
